@@ -1,0 +1,26 @@
+<div class="border-bottom row" 
+  class="bodytext"
+  style="margin-bottom:16px
+  ">
+  <div class="col-9">
+    <h4 style="color:rgb(50,100,200);
+      font-family: serif, sans-serif, monospace, cursive;
+      margin-bottom:4px;
+      padding-bottom:8px;">
+      {{item['title']}}       
+    </h4>
+          <div class="content">
+             <b>Price :</b>{{item['price']}}
+          </div>
+          {% if 'Availability' in item %} 
+          <div class="content">              
+             <b>Availability :</b>{{item['Availability']}}
+          </div>
+          {% endif %}
+  </div>
+  
+  <div class="col-3">
+      <button type="button" class="btn btn-outline-primary">Apply</button>
+  </div>  
+          
+</div>
