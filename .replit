@@ -1,10 +1,10 @@
-modules = ["python-3.10:v20-20230824-f46249a"]
+modules = ["web", "python-3.10", "nix"]
 
 hidden = [".pythonlibs"]
 run = "python app.py"
 
 [nix]
-channel = "stable-23_05"
+channel = "stable-23_11"
 
 [deployment]
 run = ["sh", "-c", "python app.py"]
